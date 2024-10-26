@@ -1,6 +1,7 @@
 version: '2.4'
 services:
  apache:
+   container_name: 'real-estate-website'
    image: 'charmsforschool/real-estate-web'
    ports:
    - '80:80'

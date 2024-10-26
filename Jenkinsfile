@@ -3,14 +3,14 @@ def app
 stage('Cloning Git')
 {
     /* Lets make sure we have a repository to checkout SCM */
-
+    checkout scm
 }
 
 stage('Build-and_Tag')
 {
     /* This build s the acutal image;
         * This is synonymous to docker  build on the command line */
-    app.docker.build('charmsforschool/car_web')
+    app.docker.build('charmsforschool/real-estate-web')
 }
 
 stage('Post-to-dockerhub')
